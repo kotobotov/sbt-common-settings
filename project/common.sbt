@@ -1,5 +1,5 @@
 //addSbtPlugin("net.virtual-void"        % "sbt-optimizer"         % "0.1.2") // анализирует время проведенное при компиляции задач для включения необходимо в билд сбт добавить:  enablePlugins(net.virtualvoid.optimizer.SbtOptimizerPlugin) поэтому нельзя использовать в коммон.сбт (будет ошибка на проекте у кого нет этого плагина) работает автоматически при компиляции
-addSbtPlugin("ch.epfl.scala"           % "sbt-scalafix"          % "0.9.4") // автоматический рефакторинг (https://scalacenter.github.io/scalafix/)
+//addSbtPlugin("ch.epfl.scala"           % "sbt-scalafix"          % "0.9.4") // автоматический рефакторинг (https://scalacenter.github.io/scalafix/) включать инногда
 addSbtPlugin("com.timushev.sbt"        % "sbt-updates"           % "0.4.0") // рекомендации по обновлению зависимостей, для использования пишем в sbt dependencyUpdates
 addSbtPlugin("com.typesafe.sbt"        % "sbt-git"               % "1.0.0") // позволяет выполнять команды git внутри sbt
 addSbtPlugin("net.virtual-void"        % "sbt-dependency-graph"  % "0.9.2") // визуализация зависимостей для использования пишем dependencyTree (в консоль) или dependencyBrowseGraph (визуализация в браузер) подробнее https://github.com/jrudolph/sbt-dependency-graph
